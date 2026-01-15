@@ -1,4 +1,4 @@
-# Resilient File Uploader
+# File Uploader
 
 A robust, resume-able file upload system designed to handle large files (e.g., 1GB+) specifically for unstable networks. Built with React, Node.js, and MySQL.
 
