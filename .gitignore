@@ -1,0 +1,28 @@
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+
+# Testing
+coverage
+
+# Production
+build
+dist
+
+# Misc
+.DS_Store
+.env
+.npm
+*.log
+
+# IDEs
+.vscode
+.idea
+
+# Uploads (IMPORTANT: specific to this project)
+backend/uploads/*
+!backend/uploads/.gitkeep
+*.bin
+*.zip
+*.sqlite
