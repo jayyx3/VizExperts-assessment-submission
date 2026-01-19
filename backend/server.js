@@ -3,9 +3,20 @@ const cors = require('cors');
 const fs = require('fs-extra');
 const path = require('path');
 const uploadRoutes = require('./src/routes/uploadRoutes');
+const db = require('./src/db');
 
 const app = express();
 const PORT = process.env.PORT || 4000;
+
+// Test DB Connection
+db.getConnection()
+    .then(connection => {
+        console.log('Database connected successfully');
+        connection.release();
+    })
+    .catch(err => {
+        console.error('Database connection failed:', err);
+    });
 
 // Middleware
 app.use(cors());
